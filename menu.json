@@ -1,70 +1,135 @@
+
 {
-   "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, M d, yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
-   "dictionary": "https://wals09.github.io/msx/dictionary.json",
-   "logo": "https://wals09.github.io/msx/logo/mss.png",
-   "headline": "",
-   "menu": [
-      {
-         "type": "separator"
-      },
-      {
-        "title": "WALS09",
-        "label": "WALS09",
-        "action": "menu:request:interaction:init:https://wals09.github.io/msx/menu.json"
-      },
-      {
-        "title": "Local MSX Server",
-        "label": "Local MSX Server",
-        "action": "menu:request:interaction:init:http://192.168.1.138:8099/msx/menu.json"
-      },
-      {
-         "icon": "menu",
-         "label": "Все приложения",
-         "data": "https://wals09.github.io/msx/mooviestile/all.json"
-      },
-      {
-         "icon": "live-tv",
-         "label": "IPTV приложения",
-         "data": "https://wals09.github.io/msx/mooviestile/iptv.json"
-      },
-      {
-         "icon": "movie",
-         "label": "Бесплатное кино",
-         "data": "https://wals09.github.io/msx/mooviestile/free_kino.json"
-      },
-      {
-         "icon": "movie-filter",
-         "label": "Всё кино",
-         "data": "https://wals09.github.io/msx/mooviestile/full_kino.json"
-      },
-      {
-         "icon": "devices-other",
-         "label": "Другие медиплатформы",
-         "data": "https://wals09.github.io/msx/mooviestile/social.json"
-      },
-      {
-         "type": "separator"
-      },
-      {
-         "icon": "dvr",
-         "label": "Альтернативные стартовые параметры",
-         "data": "https://wals09.github.io/msx/mooviestile/store.json"
-      },
-      {
-         "type": "separator"
-      },
-      {
-         "icon": "wallpaper",
-         "label": "Тема",
-         "data": "https://wals09.github.io/msx/tema/panel_tems.json"
-      },
-      {
-         "type": "separator"
-      },
-      {
-         "type": "settings"
+  "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, M d, yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
+  "dictionary": "https://wals09.github.io/msx/dictionary.json",
+  "logo": "https://wals09.github.io/msx/logo/mss.png",
+  "headline": "",
+  "menu": [
+    {
+      "type": "separator"
+    },
+    {
+      "title": "WALS09 — 1. menu URL",
+      "label": "WALS09 — 1. menu URL",
+      "action": "menu:https://wals09.github.io/msx/menu.json"
+    },
+    {
+      "title": "WALS09 — 2. data URL",
+      "label": "WALS09 — 2. data URL",
+      "data": "https://wals09.github.io/msx/menu.json"
+    },
+    {
+      "title": "WALS09 — 3. menu:user",
+      "label": "WALS09 — 3. menu:user",
+      "action": "menu:user:https://wals09.github.io/msx/menu.json"
+    },
+    {
+      "title": "WALS09 — 4. set Start Parameter",
+      "label": "WALS09 — 4. set Start Parameter",
+      "action": "start",
+      "data": {
+        "name": "WALS09",
+        "version": "1.0.0",
+        "parameter": "menu:https://wals09.github.io/msx/menu.json",
+        "welcome": "none",
+        "launcher": {
+          "type": "start",
+          "icon": "rocket-launch"
+        }
       }
-   ]
+    },
+    {
+      "title": "WALS09 — 5. reopen web MSX",
+      "label": "WALS09 — 5. reopen web MSX",
+      "action": "link:https://msx.benzac.de/?start=menu:https://wals09.github.io/msx/menu.json"
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "title": "Local — 1. menu URL",
+      "label": "Local — 1. menu URL",
+      "action": "menu:http://192.168.1.71:8099/msx/menu.json"
+    },
+    {
+      "title": "Local — 2. data URL",
+      "label": "Local — 2. data URL",
+      "data": "http://192.168.1.71:8099/msx/menu.json"
+    },
+    {
+      "title": "Local — 3. menu:user",
+      "label": "Local — 3. menu:user",
+      "action": "menu:user:http://192.168.1.71:8099/msx/menu.json"
+    },
+    {
+      "title": "Local — 4. set Start Parameter",
+      "label": "Local — 4. set Start Parameter",
+      "action": "start",
+      "data": {
+        "name": "Local MSX",
+        "version": "1.0.0",
+        "parameter": "menu:http://192.168.1.71:8099/msx/menu.json",
+        "welcome": "none",
+        "launcher": {
+          "type": "start",
+          "icon": "rocket-launch"
+        }
+      }
+    },
+    {
+      "title": "Local — 5. reopen web MSX",
+      "label": "Local — 5. reopen web MSX",
+      "action": "link:https://msx.benzac.de/?start=menu:http://192.168.1.71:8099/msx/menu.json"
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "icon": "menu",
+      "label": "Все приложения",
+      "data": "https://wals09.github.io/msx/mooviestile/all.json"
+    },
+    {
+      "icon": "live-tv",
+      "label": "IPTV приложения",
+      "data": "https://wals09.github.io/msx/mooviestile/iptv.json"
+    },
+    {
+      "icon": "movie",
+      "label": "Бесплатное кино",
+      "data": "https://wals09.github.io/msx/mooviestile/free_kino.json"
+    },
+    {
+      "icon": "movie-filter",
+      "label": "Всё кино",
+      "data": "https://wals09.github.io/msx/mooviestile/full_kino.json"
+    },
+    {
+      "icon": "devices-other",
+      "label": "Другие медиплатформы",
+      "data": "https://wals09.github.io/msx/mooviestile/social.json"
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "icon": "dvr",
+      "label": "Альтернативные стартовые параметры",
+      "data": "https://wals09.github.io/msx/mooviestile/store.json"
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "icon": "wallpaper",
+      "label": "Тема",
+      "data": "https://wals09.github.io/msx/tema/panel_tems.json"
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "type": "settings"
+    }
+  ]
 }
-
-
