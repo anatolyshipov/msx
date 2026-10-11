@@ -1,6 +1,7 @@
 {
   "name": "Моё Стартовое Меню",
   "version": "1.0.0",
+  "type": "list",
   "icon": "https://vbox.su",
   "menu": [
     {
