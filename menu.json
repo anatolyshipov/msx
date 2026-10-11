@@ -1,0 +1,16 @@
+{
+  "type": "list",
+  "headline": "Choose MSX portal",
+  "items": [
+    {
+      "title": "WALS09",
+      "label": "WALS09",
+      "action": "menu:https://wals09.github.io/msx/menu.json"
+    },
+    {
+      "title": "Local MSX Server",
+      "label": "Local MSX Server",
+      "action": "menu:http://192.168.1.138:8099/msx/menu.json"
+    }
+  ]
+}
