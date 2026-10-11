@@ -1,20 +1,5 @@
 {
-  "name": "Моё Стартовое Меню",
+  "name": "My MSX Portal Switcher",
   "version": "1.0.0",
-  "type": "list",
-  "icon": "https://vbox.su",
-  "menu": [
-    {
-      "title": "WALS09",
-      "action": "replace:https://wals09.github.io",
-      "icon": "https://icons8.com",
-      "description": "Популярный агрегатор виджетов"
-    },
-    {
-      "title": "Мой Сервер",
-      "action": "link:http://192.168.1.71:8099/",
-      "icon": "https://icons8.com",
-      "description": "Ваш собственный стартовый параметр"
-    }
-  ]
+  "parameter": "menu:http://192.168.1.138:8099/msx/menu.json"
 }
