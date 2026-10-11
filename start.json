@@ -1,5 +1,5 @@
 {
   "name": "My MSX Portal Switcher",
   "version": "1.0.0",
-  "parameter": "menu:http://192.168.1.138:8099/msx/menu.json"
+  "parameter": "menu:https://anatolyshipov.github.io/msx/menu.json"
 }
